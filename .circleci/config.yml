@@ -1,0 +1,8 @@
+version: 2
+jobs:
+ build:
+  docker:
+   - image: toandaominh1997/pytoan:latest
+  steps:
+   - checkout # check out the code in the project directory
+   - run: python test.py
